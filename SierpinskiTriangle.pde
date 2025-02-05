@@ -6,11 +6,11 @@ public void setup() {
 
 public void draw() { 
   background(255);  
-  sierpinski(235, 740, 550,20);
+  sierpinski(235, 740, 550);
 }
 
-public void sierpinski(int x, int y, int len, int n) {  
-  if (len <= n) {  
+public void sierpinski(int x, int y, int len) {  
+  if (len <= 8) {  
     return;
   } else {
     float x2 = x + len;

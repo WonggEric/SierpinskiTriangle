@@ -1,24 +1,24 @@
-int n = 8; 
+
+int n = 10;
+
 public void setup() {
   size(1000, 1000);
   strokeWeight(1);
 }
+
 public void keyPressed(){
-	if(keyCode == UP & n>=8 & n<=20){
-		n+=1;
-	}
-	if(keyCode == DOWN & n>=8 & n<=20){
-		n-=1;
-	}
+	if(keyCode  == UP & n>=5 & n<=15){
+		n+=5;
+}else if(keyCode == DOWN & n>=5 & n<=15){
+	n-=5;
 }
 
-}
 public void draw() { 
   background(255);  
   sierpinski(235, 740, 550);
 }
 
-public void sierpinski(int x, int y, int len){  
+public void sierpinski(int x, int y, int len) {  
   if (len <= n) {  
     return;
   } else {
